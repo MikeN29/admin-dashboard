@@ -11,13 +11,32 @@
     <div id="container">
       <div id="sidebar">
         <h1>Dashboard</h1>
-        <ul>
+        <ul id="sidebar-top">
           <li>Home</li>
           <li>Profile</li>
           <li>Messages</li>
+          <li>History</li>
+          <li>Tasks</li>
+          <li>Communities</li>
+        </ul>
+        <ul id="sidebar-lower">
+          <li>Settings</li>
+          <li>Support</li>
+          <li>Privacy</li>
         </ul>
       </div>
-      <div id="nav"></div>
+      <div id="nav">
+        <div id="searchbar">
+          <img src="./icons/magnify.svg" alt="" class="icon" />
+          <svg-icon type="mdi" :path="magnify"></svg-icon>
+
+          <input type="text" />
+          icon picture
+          <h2>Michael Norman</h2>
+        </div>
+        <div id="userinfo"></div>
+        <div id="buttons"></div>
+      </div>
       <div id="content">
         <div id="projects"></div>
         <div id="announcements"></div>
