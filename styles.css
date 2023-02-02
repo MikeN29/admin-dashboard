@@ -3,6 +3,7 @@ body {
   margin: 0px;
   height: 100%;
   width: 100%;
+  font-family: "Roboto", sans-serif;
 }
 
 #container {
@@ -31,26 +32,130 @@ body {
 }
 
 #nav {
-  background-color: bisque;
+  background-color: white;
   grid-column: 2 / 6;
   grid-row: 1 / 2;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  width: 100%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 #searchbar {
   display: flex;
   grid-column: 1 / 3;
+  grid-row: 1 / 2;
   width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+input {
+  border-radius: 15px;
+  width: 400px;
+}
+
+#searchinput {
+  display: flex;
+  text-align: center;
+  width: 500px;
+  justify-content: space-around;
+}
+
+#searchinfo {
+  display: flex;
+  width: 400px;
+  justify-content: space-around;
+  text-align: center;
+}
+
+#userinfo {
+  grid-column: 1 / 3;
+  grid-row: 2 /3;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#userdetails {
+  display: flex;
+  width: 400px;
+  justify-content: flex-start;
+}
+
+#userdetails > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 0px;
+}
+
+#buttons {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
 }
 
 #content {
-  background-color: green;
+  background-color: rgb(rgb(226, 226, 226), green, blue);
   grid-column: 2 / 6;
   grid-row: 2 / 6;
 }
 
-.icon {
+.icon-small {
   width: 20px;
+}
+
+.icon-med {
+  width: 50px;
+}
+
+.icon-large {
+  width: 70px;
+}
+
+/* CSS */
+.button-21 {
+  align-items: center;
+  appearance: none;
+  background-color: #3eb2fd;
+  background-image: linear-gradient(1deg, #4f58fd, #149bf3 99%);
+  background-size: calc(100% + 20px) calc(100% + 20px);
+  border-radius: 100px;
+  border-width: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: CircularStd, sans-serif;
+  font-size: 1rem;
+  height: auto;
+  justify-content: center;
+  line-height: 1.5;
+  padding: 6px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s, background-position 0.2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.button-21:active,
+.button-21:focus {
+  outline: none;
+}
+
+.button-21:hover {
+  background-position: -20px -20px;
+}
+
+.button-21:focus:not(:active) {
+  box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 0.125em;
 }

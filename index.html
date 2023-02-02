@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Admin Dashboard</title>
   </head>
   <body>
@@ -27,15 +33,34 @@
       </div>
       <div id="nav">
         <div id="searchbar">
-          <img src="./icons/magnify.svg" alt="" class="icon" />
-          <svg-icon type="mdi" :path="magnify"></svg-icon>
-
-          <input type="text" />
-          icon picture
-          <h2>Michael Norman</h2>
+          <div id="searchinput">
+            <img src="./icons/magnify.svg" alt="" class="icon-small" />
+            <input type="text" />
+          </div>
+          <div id="searchinfo">
+            <img
+              src="./icons/bell-ring-outline.svg"
+              alt=""
+              class="icon-small"
+            />
+            <img src="./icons/account-tie.svg" alt="" class="icon-med" />
+            <h3>Michael Norman</h3>
+          </div>
         </div>
-        <div id="userinfo"></div>
-        <div id="buttons"></div>
+        <div id="userinfo">
+          <div id="userdetails">
+            <img src="./icons/account-tie.svg" alt="" class="icon-large" />
+            <div>
+              <p>Hi there,</p>
+              <h2>Michael Norman (@michael)</h2>
+            </div>
+          </div>
+          <div id="buttons">
+            <button class="button-21">New</button>
+            <button class="button-21">Upload</button>
+            <button class="button-21">Share</button>
+          </div>
+        </div>
       </div>
       <div id="content">
         <div id="projects"></div>
